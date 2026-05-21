@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Maarten de Klerk | Creative Developer</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link id="favicon" rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>">
+</head>
+<body class="home-page">
+    <nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="#" class="nav-logo">Maarten de Klerk</a>
+
+        <div class="nav-menu" id="navMenu">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">Over Mij</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projecten</a>
+            <a href="portfolio-pagina/index-portfolio-nl.html" class="nav-link">Portfolio</a>
+
+            <div class="nav-actions">
+                <a href="#contact" class="nav-btn">Samenwerken</a>
+                </div>
+
+            <div class="nav-tools">
+                <a href="index-en.html" class="tool-btn language-toggle" aria-label="Switch to English">
+                        <span style="font-size: 1.2rem;">🇬🇧</span>
+                    </a>
+                <button class="tool-btn theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+
+        <button class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div class="hero-content">
+        <div class="hero-avatar fade-in">
+            <div class="avatar-ring"></div>
+            <div class="avatar-inner">
+                <span class="avatar-emoji">👋</span>
+            </div>
+        </div>
+
+        <h1 class="hero-title fade-in-up">
+            <span class="hero-title-line">Hoi, ik ben</span>
+            <span class="hero-title-name">Maarten de Klerk</span>
+        </h1>
+
+        <p class="hero-subtitle fade-in-up">Creative Developer & UI/UX Designer</p>
+        <p class="hero-description fade-in-up">
+            Ik ontwerp digitale ervaringen die creativiteit combineren met functionaliteit.
+            Gespecialiseerd in moderne websites/apps en gebruikersgericht design.
+        </p>
+
+        <div class="hero-buttons fade-in-up">
+            <a href="#contact" class="btn btn-primary">Neem Contact Op</a>
+            <a href="projects.html" class="btn btn-primary">Bekijk alle projecten <i class="fas fa-external-link-alt"></i></a>
+        </div>
+
+        <div class="hero-social fade-in">
+            <a href="https://github.com/MaartenDeKlerkPXL" target="_blank" rel="noopener" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/maarten-deklerk0123/" target="_blank" rel="noopener" class="social-link"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:maarten.deklerk@student.pxl.be" class="social-link"><i class="fas fa-envelope"></i></a>
+        </div>
+
+        <div class="scroll-indicator">
+            <i class="fas fa-arrow-down"></i>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="section about-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Over Mij</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="about-content">
+            <div class="about-image">
+                <div class="image-wrapper">
+                    <img src="assets/Overmij-foto.png" alt="Foto van Maarten de Klerk">
+                </div>
+                <div class="image-border"></div>
+            </div>
+
+            <div class="about-text">
+                <h3>Gedreven om digitale ervaringen te verbeteren.</h3>
+                <p>
+                    Hoi! Ik ben Maarten de Klerk, een gedreven grafisch vormgever gevestigd in het mooie Zuid-Limburg. Momenteel verfijn ik mijn talent aan de Hogeschool PXL in Hasselt, waar ik mijn creatieve grenzen verleg en mijn technische vaardigheden aanscherp.
+                <p>
+                Mijn passie ligt bij het creëren van sterke visuele identiteiten en moderne digitale ontwerpen. Ik hou ervan om complexe ideeën te vertalen naar heldere, impactvolle beelden die precies aansluiten bij de visie van een opdrachtgever. Als veelzijdige en flexibele ontwerper sta ik altijd open voor nieuwe uitdagingen en uiteenlopende projecten.
+                </p>
+
+                <div class="fun-fact-wrapper">
+                    <button class="fun-fact-btn">
+                        <span class="btn-icon">💡</span>
+                        <span>Wist je dat?</span>
+                    </button>
+
+                    <div class="fun-fact-card">
+                        <h4>Fun Facts over mij</h4>
+                        <ul class="fact-list">
+                            <li>
+                                <span class="fact-emoji">🇳🇱🇧🇪</span>
+                                <span>Ik woon in Nederland, maar ik studeer in Hasselt (België) omdat het onderwijs veel beter bij mij past.</span>
+                            </li>
+                            <li>
+                                <span class="fact-emoji">🎬</span>
+                                <span>Ik wou vroeger video-editor worden; nu doe ik hetzelfde, maar dan zonder bewegende beelden.</span>
+                            </li>
+                            <li>
+                                <span class="fact-emoji">🐕</span>
+                                <span>Ik heb geen huisdieren, maar zou wel graag ooit nog een hond willen (Duitse herder).</span>
+                            </li>
+                            <li>
+                                <span class="fact-emoji">🌍</span>
+                                <span>Ik wil ooit als digital nomad vanuit een camper over de hele wereld werken.</span>
+                            </li>
+                        </ul>
+                        <div class="card-decoration"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="section skills-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="section-line"></div>
+            <p class="section-description">
+                Een uitgebreide toolkit voor het bouwen van moderne, schaalbare en mooie webapplicaties
+            </p>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon icon-primary-blue">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Frontend Development</h3>
+                <p>Expert in HTML, CSS en JavaScript</p>
+                <div class="skill-bar"></div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon icon-cyan">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <h3>UI/UX Design</h3>
+                <p>Intuïtieve interfaces ontwerpen met Figma</p>
+                <div class="skill-bar"></div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon icon-teal">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Responsive Design</h3>
+                <p>Mobile-first applicaties bouwen die werken op elk apparaat</p>
+                <div class="skill-bar"></div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon icon-indigo">
+                    <i class="fas fa-bezier-curve"></i>
+                </div>
+                <h3>Grafisch Ontwerp</h3>
+                <p>Het creëren van visuele identiteiten, logo's en unieke digitale illustraties die opvallen.</p>
+                <div class="skill-bar"></div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon icon-sky">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3>Web Performance</h3>
+                <p>Applicaties optimaliseren voor snelheid, SEO en toegankelijkheid</p>
+                <div class="skill-bar"></div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon icon-dark-blue">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3>Moderne Animaties</h3>
+                <p>Boeiende ervaringen creëren met vloeiende animaties</p>
+                <div class="skill-bar"></div>
+            </div>
+        </div>
+
+        <div class="tech-stack">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Illustrator</span>
+            <span class="tech-tag">Photoshop</span>
+            <span class="tech-tag">Figma</span>
+            <span class="tech-tag">GitHub</span>
+            <span class="tech-tag">After Effects</span>
+            <span class="tech-tag">Blender</span>
+            <span class="tech-tag">InDesign</span>
+            <span class="tech-tag">Microsoft Office</span>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="section projects-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Uitgelichte Projecten</h2>
+            <div class="section-line"></div>
+            <p class="section-description">
+                Een selectie van mijn recente werk dat diverse vaardigheden en oplossingen toont
+            </p>
+        </div>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/kleingenot.png" alt="Klein Genot Website">
+                    <div class="project-overlay">
+                        <a href="https://fog-shirt-19121318.figma.site" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-category">Web Development • 2025</div>
+                    <h3>Klein Genot</h3>
+                    <p>Een sfeervolle en gebruiksvriendelijke website voor een lokaal concept.</p>
+                    <div class="project-tags">
+                        <span class="tag">Website</span>
+                        <span class="tag">Figma</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/autogarage.png" alt="Autogarage Website">
+                    <div class="project-overlay">
+                        <a href="https://repair-pager-88175855.figma.site" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-category">Web Development • 2025</div>
+                    <h3>Autogarage</h3>
+                    <p>Een professioneel digitaal platform voor een moderne garage.</p>
+                    <div class="project-tags">
+                        <span class="tag">Website</span>
+                        <span class="tag">Figma</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/brightnews.png" alt="BrightNews Website">
+                    <div class="project-overlay">
+                        <a href="https://lip-rinse-57460552.figma.site" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-category">Web Development • 2025</div>
+                    <h3>BrightNews</h3>
+                    <p>Een modern en overzichtelijk nieuwsplatform met focus op UX.</p>
+                    <div class="project-tags">
+                        <span class="tag">Website</span>
+                        <span class="tag">Figma</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects-cta">
+            <a href="projects.html" class="btn btn-primary">Bekijk Alle Projecten <i class="fas fa-external-link-alt"></i></a>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section contact-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Contact</h2>
+            <div class="section-line"></div>
+            <p class="section-description">
+                Heb je een project in gedachten? Laten we samenwerken om iets moois te maken
+            </p>
+        </div>
+
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Laten we koffie drinken</h3>
+                <p>
+                    Ik ben altijd geïnteresseerd in nieuwe projecten en kansen.
+                    Of je nu een vraag hebt of gewoon even hoi wilt zeggen, stuur gerust een bericht!
+                </p>
+
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon icon-primary-blue">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <div class="contact-label">Email</div>
+                            <a href="mailto:maarten.deklerk@student.pxl.be">maarten.deklerk@student.pxl.be</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon icon-cyan">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <div class="contact-label">Telefoon</div>
+                            <a href="tel:+31644208005">+31 6 44208005</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon icon-teal">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <div class="contact-label">Locatie</div>
+                            <div>Wittem, Nederland</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Naam</label>
+                    <input type="text" id="name" name="name" placeholder="Jouw naam" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="jouw@email.nl" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Bericht</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Vertel me over je project..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">
+                    Verstuur Bericht
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3 class="footer-title">Maarten de Klerk</h3>
+                <p>Creative designer met een passie voor het ontwerpen van mooie en functionele webervaringen.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Snelle Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#about">Over Mij</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projecten</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="portfolio-pagina/index-portfolio-nl.html">Portfolio</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Volg Mij</h4>
+                <div class="footer-social">
+                    <a href="https://github.com/MaartenDeKlerkPXL" target="_blank" rel="noopener" class="footer-social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/maarten-deklerk0123/" target="_blank" rel="noopener" class="footer-social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:maarten.deklerk@student.pxl.be" class="footer-social-link"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Gemaakt met <i class="fas fa-code"></i> en <i class="fas fa-coffee"></i> door Maarten de Klerk</p>
+            <p>© 2025 Alle rechten voorbehouden.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
