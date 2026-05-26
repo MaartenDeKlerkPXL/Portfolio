@@ -1988,3 +1988,81 @@ body.dark-mode .x-card p {
         color: var(--gray-300) !important;
     }
 }
+@media (max-width: 768px) {
+    /* 1. Betere navigatie ervaring */
+    .navbar {
+        position: sticky !important;
+        background-color: var(--dark-bg); /* Altijd leesbaar op mobiel */
+    }
+
+    /* 3. Krachtigere beelden op mobiel */
+    .project-image {
+        height: 300px;
+    }
+
+    /* 5. Meer ruimte voor tekst in de contact kaart */
+    .contact-content {
+        padding: 1.5rem !important;
+    }
+
+    /* Algemeen: Iets minder witruimte tussen secties op mobiel */
+    .section {
+        padding: 4rem 0;
+    }
+
+    /* Voorkom dat de titels te groot blijven voor hele kleine telefoons */
+    .hero-title {
+        font-size: 2.8rem;
+    }
+}
+@media (max-width: 768px) {
+    .about-image {
+        position: relative;
+        padding-bottom: 1rem; /* Ruimte maken voor de border onderaan */
+        max-width: 90%; /* Zorg dat de afbeelding zelf niet de volledige breedte raakt */
+        margin: 0 auto; /* Centreer het geheel */
+    }
+
+    .image-border {
+        /* Reset de desktop posities */
+        right: 0;
+        bottom: -1rem;
+        left: 1rem; /* Verschuif hem een klein beetje naar rechts in plaats van erbuiten */
+
+        width: 100%;
+        height: 100%;
+
+        /* Voorkom dat hij breder wordt dan de sectie */
+        max-width: 100%;
+    }
+}
+/* Voeg dit toe aan je CSS */
+@media (max-width: 768px) {
+    .filter-buttons {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-bottom: 10px; /* Ruimte voor de scroll */
+        -webkit-overflow-scrolling: touch;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .filter-btn {
+        flex: 0 0 auto; /* Zorgt dat de knoppen niet krimpen */
+    }
+
+    /* Verberg de scrollbar voor een cleaner look */
+    .filter-buttons::-webkit-scrollbar {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .projects-grid {
+        gap: 1.5rem; /* Compactere look op mobiel */
+    }
+
+    .section.projects-header {
+        padding-top: 6rem; /* Iets minder top-padding omdat de navbar sticky is */
+    }
+}
