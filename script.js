@@ -193,3 +193,180 @@ document.addEventListener('click', (e) => {
         funFactCard.classList.remove('visible');
     }
 });
+// ==========================================
+// 1. NEDERLANDSE DATASETS (modalDataNL)
+// ==========================================
+const modalDataNL = {
+    'modal-app': `
+        <h1 class="footer-title" style="font-size: 2.5rem; margin-bottom: 0.5rem;">Campus Karting App</h1>
+        <div class="project-category" style="margin-bottom: 2rem;">App Development • Event Technology</div>
+        
+        <h2><i class="fas fa-info-circle"></i> Beschrijving van de case</h2>
+        <p>
+            Vanuit Karting Genk kregen wij de uitdagende vraag om een concept te ontwikkelen dat een jongere doelgroep en studenten naar het circuit trekt. Het resultaat is de "Campus Karting Student League": een exclusief race-event waar de strijd tussen onderwijsinstellingen centraal staat. Studenten van Hogeschool PXL, UCLL en UHasselt nemen het tegen elkaar op in een bloedstollend raceweekend op het iconische circuit van Genk. 
+        </p>
+        <p>
+            Waar de website fungeert als het online uithangbord voorafgaand aan het event, is de Campus Karting App specifiek ontworpen als de onmisbare digitale partner tijdens de racedagen zelf. De app is volledig afgestemd op de behoeften van de bezoekers en coureurs op en rondom de baan. De core functionaliteiten bestaan uit een live ranking-systeem waarmee de realtime rondetijden en klassementen van de scholen direct te volgen zijn, een interactieve plattegrond van het circuitcomplex, en een geïntegreerde ticket-wallet. Via deze wallet kunnen gebruikers digitale consumptiebonnen aanschaffen en laten scannen om eten of drinken te halen. Dit totaalconcept tilt de fysieke beleving op de racedag zelf naar een professioneel en modern niveau.
+        </p>
+
+        <h2><i class="fas fa-user-check"></i> Mijn aandeel hierin</h2>
+        <p>
+            Binnen ons multidisciplinaire team, bestaande van 4 designers, 1 web codeur en 3 programmeurs, heb ik de rol van Digital Designer op me genomen. Mijn verantwoordelijkheid lag bij het visuele en functionaliteits-traject van de mobiele applicatie. Ik heb de sportieve en dynamische visuele identiteit van de Student League doorvertaald naar een interface die aansluit bij de adrenaline van de kartsport en de belevingswereld van studenten.
+        </p>
+        <p>
+            Concreet ben ik van begin tot eind bezig geweest met de User Interface (UI) in Figma. Hierbij hield ik scherp toezicht op de User Experience (UX) door middel van het opzetten van interactieve prototypes en uitgebreide user flows. Ik was verantwoordelijk voor de contentcreatie, waaronder het selecteren en bewerken van de visuals en foto's, en het schrijven van alle functionele microcopy in de app. Daarnaast heb ik er handmatig voor gezorgd dat alle designs responsief waren op verschillende schermformaten. Als designer was ik bovendien de cruciale schakel naar onze drie programmeurs; door mijn designs technisch goed te documenteren en over te dragen, konden zij het feilloze wallet- en rankingsysteem bouwen conform het UX-ontwerp.
+        </p>
+
+        <h2><i class="fas fa-lightbulb"></i> Wat ik eruit geleerd heb</h2>
+        <p>
+            Dit project heeft mijn professionele vaardigheden een enorme boost gegeven. Op organisatorisch vlak heb ik geleerd hoe het is om in een groter team te opereren onder de Scrum-methodiek. Door dagelijkse stand-ups te houden en de rol van Scrum Master te vervullen, heb ik mijn leiderschapskwaliteiten en communicatieve vaardigheden sterk ontwikkeld. Ik weet nu hoe ik de neuzen van zowel creatievelingen als programmeurs dezelfde kant op krijg.
+        </p>
+        <p>
+            Op technisch vlak heb ik mijzelf flink uitgedaagd in Figma, specifiek op het gebied van advanced prototyping, constraints en component-libraries. Ook heb ik waardevolle kennis opgedaan over versiebeheer via GitHub en het gestructureerd bijhouden van een projectbacklog in Confluence. De belangrijkste les was echter het ontwikkelen van een kritische blik op mijn eigen ontwerpen; door feedbacksessies heb ik geleerd om keuzes te maken die niet alleen visueel aantrekkelijk zijn, maar echt functioneel bijdragen aan de doelen van Karting Genk.
+        </p>
+
+        <div style="margin-top: 2.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="https://www.figma.com/proto/8naGKoPp9s6wzw9ctjrkT6/Campus-karting-App---portfolio?node-id=1-863&viewport=198%2C214%2C0.26&t=KV0E3e67MBYP3A11-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A863&page-id=0%3A1" target="_blank" class="btn btn-primary">Bekijk Figma Prototype <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://confdigi.pxl.be/spaces/2526WPL2T07/overview" target="_blank" class="btn btn-secondary">Confluence Documentatie <i class="fas fa-book"></i></a>
+        </div>
+    `,
+    'modal-web': `
+        <h1 class="footer-title" style="font-size: 2.5rem; margin-bottom: 0.5rem;">Campus Karting Website</h1>
+        <div class="project-category" style="margin-bottom: 2rem;">Web Development • UI/UX Design</div>
+        
+        <h2><i class="fas fa-info-circle"></i> Beschrijving van de case</h2>
+        <p>
+            In opdracht van Karting Genk kregen wij de taak om de "Campus Karting Student League" digitaal op de kaart te zetten. Dit evenement daagt studenten van de Hogeschool PXL, UCLL en de Universiteit Hasselt uit om tijdens een intens raceweekend te strijden om de eer van hun onderwijsinstelling. Om dit evenement te realiseren was er een centraal online platform nodig.
+        </p>
+        <p>
+            Het primaire doel van het webplatform is werving en uitgebreide informatievoorziening. De website is ontworpen om studenten te enthousiasmeren, teams te mobiliseren en hogescholen aan te trekken. Het platform biedt een helder overzicht van de evenementenplanning, het wedstrijdreglement, ticketprijzen en de actuele bezetting van het circuit. Dankzij een intuïtief dashboard kunnen studenten direct zien welke scholen zich al hebben aangemeld en hoe de voorbereidingen verlopen. De focus lag op het creëren van een snelle, sportieve en moderne online ervaring die direct de sfeer van het circuit overbrengt op de bezoeker, wat resulteert in een hoge conversie van websitebezoeker naar geregistreerde deelnemer.
+        </p>
+
+        <h2><i class="fas fa-user-check"></i> Mijn aandeel hierin</h2>
+        <p>
+            Als Digital Designer binnen ons team (bestaande uit 4 designers, 1 web codeur en 3 programmeurs) was ik verantwoordelijk voor de volledige visuele stijl en de structuur van het webplatform. Ik heb de interface vanaf de grond opgebouwd in Figma, waarbij ik gebruik heb gemaakt van een strakke, sportieve esthetiek met een duidelijke hiërarchie en intuïtieve navigatiepaden. 
+        </p>
+        <p>
+            Tijdens het ontwerpproces heb ik de UX uitgebreid getest via interactieve wireframes og prototypes. Ik heb alle wervende teksten geschreven, passend beeldmateriaal geselecteerd en de fotografie geoptimaliseerd voor het web. Een belangrijk onderdeel van mijn aandeel was het ontwerpen van een volledig responsieve layout, zodat de website op zowel desktop, tablet als smartphone een vlekkeloze en professionele indruk achterlaat. Tevens heb ik nauw samengewerkt met de web codeur om te garanderen dat de HTML/CSS-transities en de visuele details exact overeenkwamen met de ontworpen Figma-schermen.
+        </p>
+
+        <h2><i class="fas fa-lightbulb"></i> Wat ik eruit geleerd heb</h2>
+        <p>
+            Het ontwerpen van een grootschalig webplatform voor een reële, prominente opdrachtgever als Karting Genk heeft mijn blik als ontwerper verbreed. Ik heb geleerd hoe ik complexe data – zoals reglementen en variabele planningen – kan structureren tot een overzichtelijk ... aantrekkelijk geheel voor een jonge doelgroep. Het werken in een Scrum-omgeving heeft mijn planningsvaardigheden verbeterd en me lanten inzien hoe belangrijk goede documentatie is.
+        </p>
+        <p>
+            Daarnaast heb ik geleerd om strategisch te ontwerpen; een design moet niet alleen esthetisch mooi zijn, maar ook commercieel en wervend werken om de doelstellingen van de klant te behalen. Het overleggen met programmeurs en codeurs heeft mijn begrip van web-beperkingen en -mogelijkheden vergroot, waardoor ik in de toekomst nóg efficiëntere designs kan opleveren die direct bouwbaar zijn.
+        </p>
+
+        <div style="margin-top: 2.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="https://www.figma.com/proto/uVIVMtHAuVKpu4QCEdKCjQ/WPL2--Karting-Genk?node-id=2157-5604&viewport=-2233%2C155%2C0.11&t=IGvo1Y5aUlt6CcJ2-1&scaling=min-zoom&content-scaling=fixed&page-id=2157%3A5503" target="_blank" class="btn btn-primary">Bekijk Figma Prototype <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://confdigi.pxl.be/spaces/2526WPL2T07/overview" target="_blank" class="btn btn-secondary">Confluence Documentatie <i class="fas fa-book"></i></a>
+        </div>
+    `
+};
+
+// ==========================================
+// 2. ENGELSE DATASETS (modalDataEN)
+// ==========================================
+const modalDataEN = {
+    'modal-app': `
+        <h1 class="footer-title" style="font-size: 2.5rem; margin-bottom: 0.5rem;">Campus Karting App</h1>
+        <div class="project-category" style="margin-bottom: 2rem;">App Development • Event Technology</div>
+        
+        <h2><i class="fas fa-info-circle"></i> Project Description</h2>
+        <p>
+            Karting Genk challenged us to develop a concept aimed at attracting a younger demographic and students to the track. The result is the "Campus Karting Student League": an exclusive racing event centered around the competition between educational institutions. Students from Hogeschool PXL, UCLL, and UHasselt go head-to-head during an adrenaline-fueled racing weekend at the iconic Genk circuit.
+        </p>
+        <p>
+            While the website acts as the online storefront prior to the event, the Campus Karting App was specifically designed to be the indispensable digital partner during the race days themselves. The app is fully tailored to meet the needs of visitors and drivers on and around the track. Its core features include a live ranking system to track real-time lap times and school standings, an interactive map of the circuit complex, and an integrated ticket wallet. Through this wallet, users can purchase and scan digital tokens to get food and drinks. This total concept elevates the physical experience on the race day to a professional, modern standard.
+        </p>
+
+        <h2><i class="fas fa-user-check"></i> My Contribution</h2>
+        <p>
+            Within our multidisciplinary team consisting of 4 designers, 1 web developer, and 3 programmers, I took on the role of Digital Designer. My main responsibility was managing the visual and functional trajectory of the mobile application. I translated the sporty and dynamic visual identity of the Student League into a mobile user interface that matches the high energy of kart racing and connects with the student demographic.
+        </p>
+        <p>
+            Concertedly, I was involved from start to finish with the User Interface (UI) design in Figma. I closely managed the User Experience (UX) by building interactive prototypes and detailed user flows. I was responsible for content creation, which included selecting and editing visuals and photos, alongside writing all functional microcopy within the app. Furthermore, I ensured all layouts were fully responsive across various device screen sizes. As a designer, I acted as the crucial bridge to our three programmers; by thoroughly documenting and handing over my designs, they were able to build the flawless wallet and ranking system exactly as intended in the UX layout.
+        </p>
+
+        <h2><i class="fas fa-lightbulb"></i> Key Learnings</h2>
+        <p>
+            This project significantly accelerated my professional growth. Operationally, I learned how to effectively collaborate within a larger team utilizing Scrum methodologies. By organizing daily stand-ups and taking on the role of Scrum Master, I strengthened my leadership and communication skills, learning how to effectively align the goals of both creatives and developers.
+        </p>
+        <p>
+            On a technical level, I sharply refined my Figma skills, particularly in advanced prototyping, constraints, and component libraries. I also gained valuable knowledge regarding version control via GitHub and structured backlog management in Confluence. However, the most important lesson was developing a highly critical eye for my own designs; through intensive feedback sessions, I learned to make choices that are not just visually appealing, but functionally beneficial to Karting Genk's goals.
+        </p>
+
+        <div style="margin-top: 2.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="https://www.figma.com/proto/8naGKoPp9s6wzw9ctjrkT6/Campus-karting-App---portfolio?node-id=1-863&viewport=198%2C214%2C0.26&t=KV0E3e67MBYP3A11-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A863&page-id=0%3A1" target="_blank" class="btn btn-primary">View Figma Prototype <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://confdigi.pxl.be/spaces/2526WPL2T07/overview" target="_blank" class="btn btn-secondary">Confluence Documentation <i class="fas fa-book"></i></a>
+        </div>
+    `,
+    'modal-web': `
+        <h1 class="footer-title" style="font-size: 2.5rem; margin-bottom: 0.5rem;">Campus Karting Website</h1>
+        <div class="project-category" style="margin-bottom: 2rem;">Web Development • UI/UX Design</div>
+        
+        <h2><i class="fas fa-info-circle"></i> Project Description</h2>
+        <p>
+            Commissioned by Karting Genk, our team was tasked with putting the "Campus Karting Student League" on the digital map. This event challenges students from Hogeschool PXL, UCLL, and Hasselt University to battle for the pride of their respective institutions during an intense racing weekend. To bring this event to life, a centralized online platform was essential.
+        </p>
+        <p>
+            The primary goal of the web platform is recruitment and comprehensive information sharing. The website is engineered to generate excitement among students, mobilize racing teams, and attract universities. The platform offers a clear overview of event schedules, tournament regulations, ticket pricing, and real-time track occupancy. Thanks to an intuitive dashboard, students can instantly see which schools have registered and track ongoing preparations. The focus was on creating a fast, sporty, and modern online experience that immediately channels the racetrack atmosphere to the visitor, resulting in high conversion rates from casual visitor to registered participant.
+        </p>
+
+        <h2><i class="fas fa-user-check"></i> My Contribution</h2>
+        <p>
+            As the Digital Designer within our team (comprising 4 designers, 1 web developer, and 3 programmers), I was responsible for the entire visual style and structural layout of the web platform. I built the interface from scratch in Figma, implementing a clean, sporty aesthetic with a sharp visual hierarchy and intuitive user navigation paths.
+        </p>
+        <p>
+            Throughout the design process, I rigorously tested the UX using interactive wireframes and high-fidelity prototypes. I authored all promotional copywriting, selected appropriate visual assets, and optimized photography for web delivery. A critical component of my role was designing a fully responsive layout, ensuring the website delivers a flawless and professional impression across desktop, tablet, and smartphone screens. I also worked closely with the web developer to guarantee that the HTML/CSS transitions and visual details matched the designed Figma mockups perfectly.
+        </p>
+
+        <h2><i class="fas fa-lightbulb"></i> Key Learnings</h2>
+        <p>
+            Designing a large-scale web platform for a prominent, real-world client like Karting Genk expanded my horizons as a digital designer. I mastered how to structure complex data—such as dense regulations and variable time schedules—into an accessible and engaging interface for a younger audience. Operating within a Scrum environment refined my planning workflows and highlighted the immense value of sound project documentation.
+        </p>
+        <p>
+            Furthermore, I learned how to design strategically; a digital interface must not only look aesthetically premium but must function commercially to convert users and fulfill the client's business metrics. Interacting directly with developers broadened my understanding of web constraints and browser capabilities, which will allow me to deliver even more efficient, build-ready designs in future projects.
+        </p>
+
+        <div style="margin-top: 2.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="https://www.figma.com/proto/uVIVMtHAuVKpu4QCEdKCjQ/WPL2--Karting-Genk?node-id=2157-5604&viewport=-2233%2C155%2C0.11&t=IGvo1Y5aUlt6CcJ2-1&scaling=min-zoom&content-scaling=fixed&page-id=2157%3A5503" target="_blank" class="btn btn-primary">View Figma Prototype <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://confdigi.pxl.be/spaces/2526WPL2T07/overview" target="_blank" class="btn btn-secondary">Confluence Documentation <i class="fas fa-book"></i></a>
+        </div>
+    `
+};
+
+// ==========================================
+// 3. LOGICA EN FUNCTIES (Taal-detectie toegevoegd)
+// ==========================================
+function openModal(id) {
+    // Check de 'lang' property van je html pagina (<html lang="nl"> of lang="en")
+    const currentLang = document.documentElement.lang || 'nl';
+
+    // Selecteer de juiste dataset op basis van de taal
+    let selectedText = "";
+    if (currentLang === 'en') {
+        selectedText = modalDataEN[id];
+    } else {
+        selectedText = modalDataNL[id];
+    }
+
+    // Vul en toon de modal
+    document.getElementById('modalContent').innerHTML = selectedText;
+    document.getElementById('projectModal').style.display = 'flex';
+    document.body.style.overflow = 'hidden'; // Voorkom scrollen achter modal
+}
+
+function closeModal() {
+    document.getElementById('projectModal').style.display = 'none';
+    document.body.style.overflow = 'auto'; // Herstel scrollen
+}
+
+// Sluit modal bij klik buiten de container
+window.onclick = function(event) {
+    let modal = document.getElementById('projectModal');
+    if (event.target == modal) {
+        closeModal();
+    }
+}

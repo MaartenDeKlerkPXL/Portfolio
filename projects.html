@@ -68,34 +68,41 @@
         </div>
 
         <div class="projects-grid" id="projectsGrid">
-
-            <!-- Campus Karting App -->
-            <div class="project-card" data-category="mobile" data-year="2026">
+            <!-- campus karting app -->
+            <div class="project-card" data-category="mobile" data-year="2026" onclick="openModal('modal-app')">
                 <div class="project-image" style="background-color: #ffffff;">
-                    <img src="assets/campuskartingapp.png" alt="Campus Karting App" style="width: 100%; height: 100%; object-fit: contain; object-position: center;">
+                    <img src="assets/campuskartingapp.png" alt="Campus Karting App" style="width: 100%; height: 100%; object-fit: contain;">
                     <div class="project-overlay">
-                        <a href="https://einklang-simpelveld.netlify.app/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        <span class="project-link"><i class="fas fa-plus"></i></span>
                     </div>
                 </div>
                 <div class="project-content">
                     <div class="project-category">App Development • 2026</div>
                     <h3>Campus Karting App</h3>
-                    <p>Een dynamische mobiele applicatie voor raceliefhebbers om live rondetijden bij te houden, klassementen te bekijken en direct heats te boeken.</p>
+                    <p>Digitale partner voor racedagen met live rankings en ticket-wallet.</p>
                 </div>
             </div>
 
-            <!-- Campus Karting Website -->
-            <div class="project-card" data-category="web" data-year="2026">
+            <!-- campus karting web -->
+            <div class="project-card" data-category="web" data-year="2026" onclick="openModal('modal-web')">
                 <div class="project-image">
                     <img src="assets/Campus%20karting%20web.png" alt="Campus Karting Website" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
                     <div class="project-overlay">
-                        <a href="https://einklang-simpelveld.netlify.app/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        <span class="project-link"><i class="fas fa-plus"></i></span>
                     </div>
                 </div>
                 <div class="project-content">
                     <div class="project-category">Web Development • 2026</div>
                     <h3>Campus Karting Website</h3>
-                    <p>Een snel en modern webplatform met een intuïtief boekingssysteem, realtime circuit-bezetting en een strakke, sportieve uitstraling.</p>
+                    <p>Wervend platform voor de Student League strijd tussen hogescholen.</p>
+                </div>
+            </div>
+
+            <div id="projectModal" class="modal-overlay">
+                <div class="modal-container">
+                    <button class="modal-close" onclick="closeModal()">&times;</button>
+                    <div id="modalContent" class="modal-body">
+                    </div>
                 </div>
             </div>
 
