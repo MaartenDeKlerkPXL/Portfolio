@@ -14,23 +14,35 @@
 <nav class="navbar scrolled" id="navbar">
     <div class="nav-container">
         <a href="index.html" class="nav-logo">Maarten de Klerk</a>
+
         <div class="nav-menu" id="navMenu">
             <a href="index.html" class="nav-link">Home</a>
-            <a href="projects.html" class="nav-link active">Projecten</a>
+            <a href="projects.html" class="nav-link">Projecten</a>
+
+            <div class="nav-dropdown">
+                <a href="#" class="nav-link dropdown-toggle">Portfolio <i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i></a>
+                <div class="dropdown-content">
+                    <div class="dropdown-inner">
+                        <a href="WPL1-Portfolio/WPL1-nl.html"><i class="fas fa-folder-open"></i> WPL 1</a>
+                        <a href="WPL2-Portfolio/WPL2-nl.html"><i class="fas fa-rocket"></i> WPL 2</a>
+                    </div>
+                </div>
+            </div>
 
             <div class="nav-actions">
                 <a href="index.html#contact" class="nav-btn">Samenwerken</a>
-                <div class="nav-tools">
-                    <a href="projects-en.html" class="tool-btn language-toggle" ...>
-                         <span style="font-size: 1.2rem;">🇬🇧</span>
-                        </a>
-                    </a>
-                    <button class="tool-btn theme-toggle" aria-label="Toggle Dark Mode">
-                        <i class="fas fa-moon"></i>
-                    </button>
-                </div>
+            </div>
+
+            <div class="nav-tools">
+                <a href="WPL2-Portfolio/WPL2-nl.html" class="tool-btn language-toggle" aria-label="Switch to English">
+                    <span style="font-size: 1.2rem;">🇬🇧</span>
+                </a>
+                <button class="tool-btn theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
             </div>
         </div>
+
         <button class="nav-toggle" id="navToggle">
             <i class="fas fa-bars"></i>
         </button>

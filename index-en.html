@@ -15,22 +15,33 @@
     <link rel="stylesheet" href="style.css">
     <link id="favicon" rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>">
 </head>
-<body class="home-page"> <nav class="navbar" id="navbar">
+<body class="home-page">
+<nav class="navbar" id="navbar">
     <div class="nav-container">
-        <a href="#" class="nav-logo">Maarten de Klerk</a>
+        <a href="index-en.html" class="nav-logo">Maarten de Klerk</a>
 
         <div class="nav-menu" id="navMenu">
-            <a href="#" class="nav-link">Home</a>
+            <a href="index-en.html" class="nav-link">Home</a>
             <a href="#about" class="nav-link">About Me</a>
             <a href="#skills" class="nav-link">Skills</a>
-            <a href="#projects" class="nav-link">Projects</a>
-            <a href="portfolio-pagina/index-portfolio-nl.html" class="nav-link">Portfolio</a>
-            <div class="nav-actions">
-                <a href="#contact" class="nav-btn">Samenwerken</a>
+            <a href="projects-en.html" class="nav-link">Projects</a>
+
+            <div class="nav-dropdown">
+                <a href="#" class="nav-link dropdown-toggle">Portfolio <i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i></a>
+                <div class="dropdown-content">
+                    <div class="dropdown-inner">
+                        <a href="WPL1-Portfolio/WPL1-en.html"><i class="fas fa-folder-open"></i> WPL 1</a>
+                        <a href="WPL2-Portfolio/WPL2-en.html"><i class="fas fa-rocket"></i> WPL 2</a>
+                    </div>
                 </div>
+            </div>
+
+            <div class="nav-actions">
+                <a href="#contact" class="nav-btn">Work With Me</a>
+            </div>
 
             <div class="nav-tools">
-                <a href="index.html" class="tool-btn">
+                <a href="index.html" class="tool-btn language-toggle" aria-label="Switch to Dutch">
                     <span style="font-size: 1.2rem;">🇳🇱</span>
                 </a>
                 <button class="tool-btn theme-toggle" aria-label="Toggle Dark Mode">
@@ -44,7 +55,6 @@
         </button>
     </div>
 </nav>
-
 <section class="hero">
     <div class="hero-bg">
         <div class="blob blob-1"></div>
@@ -392,7 +402,7 @@
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="portfolio-pagina/index-portfolio-nl.html">Portfolio</a></li>
+                    <li><a href="WPL1-Portfolio/WPL1-nl.html">Portfolio</a></li>
                 </ul>
             </div>
 

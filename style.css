@@ -302,18 +302,6 @@ body {
     color: var(--blue-600);
 }
 
-.nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: var(--cyan-400);
-    transition: width 0.3s ease;
-    border-radius: 2px;
-}
-
 .navbar.scrolled .nav-link::after {
     background: var(--blue-600);
 }
@@ -2153,4 +2141,142 @@ body.dark-mode .modal-body .btn-secondary:hover {
         width: 100%;
         margin-bottom: 10px;
     }
+}
+
+/* --- NAVIGATIE MET STREEPJES (EXCLUSIEF PORTFOLIO) --- */
+
+/* 1. Basis stijl voor alle links */
+.nav-link,
+.dropdown-toggle {
+    color: var(--blue-100) !important;
+    text-decoration: none !important;
+    font-weight: 500;
+    font-size: 0.95rem;
+    position: relative;
+    padding-bottom: 4px;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+/* Kleur in de witte (scrolled) navbar */
+.navbar.scrolled .nav-link,
+.navbar.scrolled .dropdown-toggle {
+    color: var(--gray-600) !important;
+}
+
+/* Hover kleur */
+.nav-link:hover,
+.dropdown-toggle:hover,
+.nav-dropdown:hover .dropdown-toggle {
+    color: white !important;
+}
+
+.navbar.scrolled .nav-link:hover,
+.navbar.scrolled .dropdown-toggle:hover {
+    color: var(--blue-600) !important;
+}
+
+/* 2. HET STREEPJE - Alleen voor normale .nav-link en NIET voor de dropdown */
+.nav-link:not(.dropdown-toggle)::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--cyan-400);
+    transition: width 0.3s ease;
+    border-radius: 2px;
+}
+
+/* Streepje kleur in witte navbar */
+.navbar.scrolled .nav-link:not(.dropdown-toggle)::after {
+    background: var(--blue-600);
+}
+
+/* Streepje activeren op hover */
+.nav-link:not(.dropdown-toggle):hover::after {
+    width: 100%;
+}
+
+/* 3. DROPDOWN LAYOUT (ZONDER STREEPJE) */
+.nav-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 15px;
+    min-width: 180px;
+    z-index: 1000;
+}
+
+.dropdown-inner {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--blue-100);
+    padding: 0.5rem;
+}
+
+.nav-dropdown:hover .dropdown-content {
+    display: block;
+    animation: fadeInSlide 0.3s ease forwards;
+}
+
+/* De links IN het menu */
+.dropdown-inner a {
+    color: var(--gray-700) !important;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.dropdown-inner a:hover {
+    background-color: var(--blue-50);
+    color: var(--blue-600) !important;
+    transform: translateX(5px);
+}
+
+/* Dark Mode voor dropdown */
+body.dark-mode .dropdown-inner {
+    background: var(--dark-bg);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+body.dark-mode .dropdown-inner a { color: var(--gray-300) !important; }
+body.dark-mode .dropdown-inner a:hover { background: rgba(255,255,255,0.05); color: white !important; }
+
+@keyframes fadeInSlide {
+    from { opacity: 0; transform: translateX(-50%) translateY(10px); }
+    to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+/* 4. MOBIEL */
+@media (max-width: 768px) {
+    .dropdown-toggle { display: none !important; }
+    .dropdown-content { position: static; transform: none; display: block; width: 100%; padding-top: 0; }
+    .dropdown-inner { background: transparent; border: none; box-shadow: none; padding: 0; }
+    .dropdown-inner a {
+        justify-content: center;
+        color: white !important;
+        font-size: 1.5rem;
+        padding: 1rem 0;
+    }
+}
+/* Verwijder het standaard Bootstrap pijltje */
+.dropdown-toggle::after {
+    display: none !important;
 }
