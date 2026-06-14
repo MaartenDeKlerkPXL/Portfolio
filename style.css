@@ -2280,3 +2280,34 @@ body.dark-mode .dropdown-inner a:hover { background: rgba(255,255,255,0.05); col
 .dropdown-toggle::after {
     display: none !important;
 }
+/* --- VIDEO MODAL STYLING --- */
+.modal-video-wrapper {
+    border-radius: 1rem;
+    overflow: hidden;
+    background: #020617; /* Zwarte achtergrond voor de cinema-look */
+    margin-bottom: 2rem;
+    box-shadow: 0 15px 35px -5px rgba(30, 58, 138, 0.25);
+    border: 1px solid var(--gray-200);
+}
+
+.modal-video-wrapper video {
+    width: 100%;
+    display: block;
+    max-height: 65vh; /* Voorkomt dat de video uit het scherm valt */
+    object-fit: contain;
+}
+
+/* Zorg dat de tekst netjes leest in de video overlay */
+.modal-text-content p {
+    color: var(--gray-700);
+}
+
+/* Dark mode fixes voor de video overlay */
+body.dark-mode .modal-video-wrapper {
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .modal-text-content p {
+    color: var(--gray-300);
+}

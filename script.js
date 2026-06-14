@@ -370,3 +370,42 @@ window.onclick = function(event) {
         closeModal();
     }
 }
+// ==========================================
+// VIDEO MODAL LOGICA VOOR MOTION PROJECTEN
+// ==========================================
+
+function openVideoModal(videoSrc, title, description) {
+    const modalContent = document.getElementById('modalContent');
+
+    // Bouw de HTML op voor de video player in jouw huisstijl
+    modalContent.innerHTML = `
+        <div class="modal-video-wrapper">
+            <video src="${videoSrc}" controls autoplay playsinline></video>
+        </div>
+        <div class="modal-text-content">
+            <div class="project-category" style="margin-bottom: 1rem;">Motion Design • 2025</div>
+            <h2 style="color: var(--blue-600); margin-top: 0; margin-bottom: 1rem; font-size: 1.8rem;">${title}</h2>
+            <p style="line-height: 1.8; margin-bottom: 0;">${description}</p>
+        </div>
+    `;
+
+    // Toon de modal en stop achtergrond scrollen
+    document.getElementById('projectModal').style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+}
+
+// UPDATE VAN JOUW BESTAANDE closeModal FUNCTIE:
+function closeModal() {
+    document.getElementById('projectModal').style.display = 'none';
+    document.body.style.overflow = 'auto'; // Herstel scrollen
+    // BELANGRIJK: Maak de content leeg zodat de video stopt met afspelen op de achtergrond!
+    document.getElementById('modalContent').innerHTML = '';
+}
+
+// Sluit modal bij klik buiten de container
+window.onclick = function(event) {
+    let modal = document.getElementById('projectModal');
+    if (event.target == modal) {
+        closeModal();
+    }
+}
